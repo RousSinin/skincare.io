@@ -1,0 +1,54 @@
+ <div className="w-[95%] h-[50vh] flex  m-auto shadow-2xl rounded-l-[20px] rounded-r-[20px]">
+        <div className="w-[75%] h-[50vh]">
+          <img
+            className="w-full h-full object-cover rounded-l-[20px]"
+            src="https://i.pinimg.com/564x/29/7e/2f/297e2f2488ad61d0362dc9074df65dc7.jpg"
+            alt=""
+          />
+        </div>
+        <div className="w-[30%] h-[50vh] bg-[#c16a54] rounded-r-[20px] items-center text-center">
+          <p className="mt-[130px] font-serif text-2xl text-[white] lg:text-[30px] text-[18px]">
+            {" "}
+            Let's Get Ready <br />
+            With Tynin{" "}
+          </p>{" "}
+          <br />
+          <button onClick={flex} className="lg:w-[150px] lg:h-[35px] w-[100px] h-[35px] bg-[black] text-[white] lg:rounded-[5px] rounded-[20px] duration-300">
+            About Us
+          </button>
+          {/* hover */}
+          <div className={menu? "lg:w-[250px] w-[170px] lg:h-[300px] h-[250px] bg-slate-100 absolute rounded-[10px] lg:mt-[-253px] mt-[-285px] lg:ml-[190px] ml-[-55px] shadow-2xl border-2 border-gray-300" :"hidden"}>
+            <div className="flex flex-col items-end p-5">
+              <span className="flex gap-5 items-center">
+                <h1 className="font-bold">Log in or Sign Up</h1>
+                <FaUserCircle className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>Services</h1>
+                <RiCustomerService2Fill className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>Help & Setting</h1>
+                <FiSettings className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>Languages</h1>
+                <BsTranslate className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>About</h1>
+                <AiFillExclamationCircle className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>Contact</h1>
+                <IoMdCall className="text-xl"/>
+              </span>
+              <span className="flex gap-5 items-center">
+                <h1>Other</h1>
+                <BsThreeDots className="text-xl"/>
+              </span>
+            </div>
+          </div>
+          {/* end of hover */}
+        </div>
+      </div>
